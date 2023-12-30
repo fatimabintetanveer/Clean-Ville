@@ -18,9 +18,11 @@ class EventController extends Controller
     public function showEvents(Request $request)
     {
         $search = $request->input('search');
-        
+        //Search by title, description or location
         if ($search) {
-            $events = Event::where('title', 'like', '%' . $search . '%')->get();
+            $events = Event::where('title', 'like', '%' . $search . '%')->
+            orWhere('description', 'like', '%' . $search . '%')->
+            orWhere('location', 'like', '%' . $search . '%')->get();
         } else {
             $events = Event::all();
         }
