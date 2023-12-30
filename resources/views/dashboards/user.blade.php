@@ -53,6 +53,8 @@
         
     </div>
     
+
+    <x-footer />
 </body>
 </html>
 @endauth

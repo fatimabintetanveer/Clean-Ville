@@ -17,7 +17,7 @@
         <a href="{{ url('/login') }}" class="cta-button">Get Started</a>
     </section>
     <div id="aboutus">
-    <div class="aboutus"> 
+    <div class="aboutus p-4"> 
         <div class="container">
             <h2>Our Vision</h2>
             <p>Empower communities to create a cleaner and greener world for current and future generations. Together, we envision a world where public spaces are vibrant, sustainable, and welcoming to all.</p>
@@ -35,6 +35,7 @@
     </div>
 </div>
 
+    <x-footer />
 
 </body>
 </html>

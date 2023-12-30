@@ -158,9 +158,7 @@
         </div>
     </div>
 
-    <footer>
-        <!-- Include your footer content here -->
-    </footer>
+    <x-footer /> 
 </body>
 </html>
 

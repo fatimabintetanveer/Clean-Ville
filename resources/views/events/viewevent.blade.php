@@ -19,10 +19,10 @@
         @endif
     @endif
 
-    <div class="search-bar">
-        <form action="{{ route('events.search') }}" method="GET">
-            <input type="text" name="search" placeholder="Search by title...">
-            <button type="submit">Search</button>
+    <div class="search-bar form my-3 w-50 text-center m-auto">
+        <form class="row" action="{{ route('events.search') }}" method="GET">
+            <input class="form-control" type="text" name="search" placeholder="Search by title...">
+            <button class="m-auto my-2 col-4" type="submit">Search</button>
         </form>
     </div>
 
@@ -35,12 +35,15 @@
                 <p>From: {{ \Carbon\Carbon::parse($event->start_date)->format('d-M-Y') }}     To: {{ \Carbon\Carbon::parse($event->end_date)->format('d-M-Y') }}</p>
                 <p>Location: {{ $event->location }}</p>
                 <p>Description: {{ $event->description }}</p>
-                <h3 class='tasks'>Tasks:</h3>
-                <ul>
-                    @foreach($event->tasks as $task)
-                        <li>{{ $task->description }}</li>
-                    @endforeach
-                </ul>
+                <div class="mb-5" >
+                    <h3 class='tasks'>Tasks</h3>
+                    <ul class="text-start m-auto">
+                        @foreach($event->tasks as $task)
+                            <li>{{ $task->description }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                
 
                 @if(auth()->check())
                     @if(auth()->user()->role === 'admin')
@@ -50,9 +53,9 @@
                     @else
                         <!-- User actions -->
                         @if(now()->gte($event->end_date))
-                            <button type="button" class="cta-button" data-bs-toggle="modal" data-bs-target="#VolunteerNotAvailableModal">Volunteer</button>
+                            <button type="button" class="cta-button volunteer-button" data-bs-toggle="modal" data-bs-target="#VolunteerNotAvailableModal">Volunteer</button>
                         @else
-                        <button class="cta-button"  onclick="location.href='{{ route('volunteer.select', ['eventId' => $event->id]) }}'">Volunteer</button>
+                        <button class="cta-button volunteer-button" onclick="location.href='{{ route('volunteer.select', ['eventId' => $event->id]) }}'">Volunteer</button>
                         
                         @endif
 
@@ -88,6 +91,9 @@
                             </div>
 
 
+
+
+    <x-footer />
 
         
     <script>
