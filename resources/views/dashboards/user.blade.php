@@ -11,7 +11,9 @@
 </head>
 
 <body>
+   
     @include('partials.user_header')
+    <x-flash_message />
     <div class="dashboard-container">
         <section class="welcome-message">
             <h2>Welcome, {{auth()->user()->name}}!</h2>

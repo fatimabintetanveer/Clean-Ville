@@ -1,6 +1,7 @@
 <!-- resources/views/partials/user_header.blade.php -->
 
 <header>
+
         <div class="logo">
         <img src="{{ asset('images/Clean ville.png') }}" alt="Cleaning Scheduler Logo">
         </div>

@@ -181,7 +181,7 @@ public function saveVolunteer(Request $request, $eventId)
               // Find or create a VolunteerStatus record based on user_id and event_id
               $volunteerStatus = VolunteerStatus::firstOrCreate(
                 ['user_id' => $eventVolunteer->user_id, 'event_id' => $eventVolunteer->event_id],
-                ['status' => 'pending'] // Default status when creating a new record
+                ['status' => 'Pending'] // Default status when creating a new record
             );
 
 

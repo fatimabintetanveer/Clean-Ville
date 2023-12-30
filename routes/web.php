@@ -20,11 +20,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Show home page
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
-Route::get('/aboutus', function () {
-    return view('about');
-});
 
 //Show Login form
 Route::get('/login', [UserController::class, 'login'])->name('login');
@@ -74,21 +71,24 @@ Route::put('/update_event/{eventId}', [EventController::class, 'updateEvent'])->
 // Delete Event
 Route::delete('/delete_event/{eventId}', [EventController::class, 'deleteEvent'])->name('events.delete');
 
+
+// Route to volunteer for an event
 Route::get('/volunteer/{eventId}', [EventController::class, 'getDateRange'])->name('volunteer.select');
 
+// Save volunteer preferences for an event
 Route::post('/save-volunteer/{eventId}', [EventController::class, 'saveVolunteer'])->name('volunteer.save');
 
+// Update user volunteer status
 Route::post('/user/update-status/{volunteerId}', [EventController::class, 'updateStatus'])->name('user.updateStatus');
 
+// Show the form to report an issue
+Route::get('/reportissue', [ComplaintController::class, 'index'])->name('complaints.form');
 
+// Store a new complaint
+Route::post('/reportissue', [ComplaintController::class, 'store']);
 
-Route::get('/reportissue', [ComplaintController::class,'index'])->name('complaints.form');
+// View all complaints
+Route::get('/complaints', [ComplaintController::class, 'getAllComplaints']);
 
-
-Route::post('/reportissue', [ComplaintController::class,'store']);
-
-
-Route::get('/complaints', [ComplaintController::class,'getAllComplaints']);
-
+// View FAQs
 Route::get('/faqs', [FAQController::class, 'index']);
-

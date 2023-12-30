@@ -12,6 +12,7 @@
 
 <body>
 @include('partials.admin_header')
+<x-flash_message />
     <div class="dashboard-container">
         <section class="welcome-message">
             <h2>Welcome, {{ auth()->user()->name }}!</h2>
@@ -47,9 +48,9 @@
                                 
                                
                                 <select name="status" class="status_dropdown">
-                                    <option value="pending" @if($volunteer->user->volunteerStatus->status === 'Pending') selected @endif>Pending</option>
-                                    <option value="completed" @if($volunteer->user->volunteerStatus->status === 'Completed') selected @endif>Completed</option>
-                                    <option value="in_progress" @if($volunteer->user->volunteerStatus->status === 'In Progress') selected @endif>In Progress</option>
+                                    <option value="Pending" @if($volunteer->user->volunteerStatus->status === 'Pending') selected @endif>Pending</option>
+                                    <option value="Completed" @if($volunteer->user->volunteerStatus->status === 'Completed') selected @endif>Completed</option>
+                                    <option value="In Progress" @if($volunteer->user->volunteerStatus->status === 'In Progress') selected @endif>In Progress</option>
                                 </select>
                                 <button type="submit">Update Status</button>
                             </form>
