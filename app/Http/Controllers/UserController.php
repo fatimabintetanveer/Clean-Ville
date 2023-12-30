@@ -50,7 +50,6 @@ class UserController extends Controller
         
         //Logout the user
         public function logout(Request $request){
-            //dd($request->all());
             auth()->logout();
 
            
