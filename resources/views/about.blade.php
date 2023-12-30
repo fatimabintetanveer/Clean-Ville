@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <style>
+    /* Styling for about us page */
     body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
