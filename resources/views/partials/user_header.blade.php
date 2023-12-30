@@ -12,7 +12,7 @@
                 <li><a href="/reportissue"  class="{{ Request::is('reportissue*') ? 'active' : '' }}">Report Issue</a></li>
                 <li><a href="/faqs" class="{{ Request::is('faqs*') ? 'active' : '' }}">FAQs</a></li>
                 <li>@auth
-                    <form action="{{ route('logout') }}" method="post">
+                    <form action="/logout" method="post">
                         @csrf
                         <button class="logout" type="submit">Logout</button>
                     </form>
