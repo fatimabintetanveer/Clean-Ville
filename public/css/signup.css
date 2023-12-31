@@ -1,19 +1,9 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    float: right;
-    padding-right: 50px;
-    padding-left: 50px;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
+.body-container {
+
     background-image: url('/images/signupbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body::-webkit-scrollbar {
     width: 0px;
@@ -27,17 +17,14 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    width: 600px;
+    width: 70%;
     padding: 20px;
-    padding-right: 40px;
-   
-   
+    padding-right: 40px;   
+    margin-top: 40vh !important;
 }
 
 .icon-container{
-        position: absolute;
-        top: 20px;
-        left: 20px;
+
         display: flex;
         height: max-content;
         
@@ -63,24 +50,18 @@ body::-webkit-scrollbar-thumb {
         background-color: transparent;
         
     }
-    logo {
-    position: absolute;
-    top: 70px;
-    left: 180px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #0f0f0f;
-    width: 300px;
-    height: max-content;
-    padding-left: 70px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-}
+
+    label{
+        color: white;
+        text-align: start;
+    }
+
+    .logo{
+        background-image: linear-gradient(to right, rgba(136, 234, 135, 0.354), rgb(133, 226, 161));
+    }
 
 .logo img {
-    max-width: 70%;
-    max-height: 70%;
+    width: 15%;
 }
 
 .logo p {

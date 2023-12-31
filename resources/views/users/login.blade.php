@@ -10,9 +10,13 @@
 </head>
 
 <body>
+    
+    <div class="body-container">
+
+    
     <div class="icon-container">
     <a href="/" class="home-link">
-        <i class="fas fa-home"></i>
+        <i class="fas fa-home text-white"></i>
     </a>
     </div>
     <section class="mission">
@@ -57,6 +61,9 @@
         </div>
     </div>
 
-    
+</div>
+
+    <x-footer /> 
 </body>
+   
 </html>

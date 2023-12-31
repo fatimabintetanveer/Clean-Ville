@@ -11,9 +11,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <a href="/dashboard/{{auth()->user()->id}}" class="logo">
             <img src="{{ asset('/images/Clean ville.png') }}" alt="Cleaning Scheduler Logo">
-        </div>
+        </a>
     </header>
     <div class="container">
         <form action="{{ route('volunteer.save', ['eventId' => $event->id]) }}" method="post">
@@ -35,5 +35,8 @@
             <button type="submit" class="btn btn-primary">Save Changes</button>
         </form>
     </div>
+
+
+    <x-footer />
 </body>
 </html>
