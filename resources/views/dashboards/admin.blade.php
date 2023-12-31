@@ -13,6 +13,7 @@
 <body>
 @include('partials.admin_header')
 <x-flash_message />
+<x-flash_message />
     <div class="dashboard-container">
         <section class="welcome-message">
             <h2>Welcome, {{ auth()->user()->name }}!</h2>
@@ -21,7 +22,7 @@
             <!-- Add your calendar view content here -->
         </section>
         <section class="task-assignments">
-            <h3>Task Assignments</h3>
+            <h3 class="task">Volunteering Details</h3>
             <table>
                 <thead>
                     <tr>

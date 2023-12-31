@@ -23,7 +23,7 @@
            
         </section>
         <section class="task-assignments">
-            <h3>Upcoming Tasks </h3>
+            <h3 class='task'>Event Details </h3>
             <table>
                 <thead>
                     <tr>

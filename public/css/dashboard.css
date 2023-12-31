@@ -77,7 +77,7 @@ nav a:hover {
 .logout:focus {
     box-shadow: 0 0 2px 2px #007BFF;
 }
-h3{
+.task{
     background-color: #007BFF;
     background-image: linear-gradient(to right, rgba(136, 234, 135, 0.354), rgb(133, 226, 161));
     color:#f7f7f7;

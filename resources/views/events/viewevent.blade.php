@@ -19,14 +19,19 @@
         @endif
     @endif
 
+
+    <div class="event-page-container">
+    <div class="search">
     <div class="search-bar">
         <form action="{{ route('events.search') }}" method="GET">
             <input type="text" name="search" placeholder="Search by title...">
             <button type="submit">Search</button>
         </form>
     </div>
+</div>
 
-    <div class="event-page-container">
+    <x-flash_message />
+    <div class="event-display">
     @foreach($events as $event)
         <section class="event">
         <img src="{{ Storage::disk('public')->url($event->image) }}" alt="{{ $event->title }}">
@@ -66,7 +71,7 @@
             </div>
         </section>
      @endforeach
-
+</div>
     </div>
 
       <!-- Modal for Volunteering Not Available -->

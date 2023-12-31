@@ -10,6 +10,7 @@
 </head>
 <body>
     @include('partials.home_header');
+    <x-flash_message />
     
     <section class="introduction">
         <h1>Empower Your Community to Clean and Thrive!</h1>

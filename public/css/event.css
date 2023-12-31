@@ -6,13 +6,15 @@
     padding: 20px;
     text-align: center;
     align-items: center;
+    
+
 }
 
 .create-event-form {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
-    width: 40%; 
+    padding: 50px;
+    width: 60%; 
     text-align: left;
     margin: 0 auto;
     padding-right: 50px;
@@ -60,13 +62,18 @@ button:hover {
 
 .event-page-container {
     background-color: #f7f7f7;
+
+    
+}
+
+.event-display{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     padding-left: 3px;
-    
+
 }
 
 .event {
@@ -77,6 +84,7 @@ button:hover {
     width: 30%; 
     text-align: center;
     transition: transform 0.3s, background-color 0.3s;
+    margin: 0 10px 20px 10px;
 }
 
 .event:hover {
@@ -105,7 +113,7 @@ button:hover {
     margin: 10px 0;
 }
 
-.event h3 {
+.tasks {
     font-size: 18px;
     color: #333;
     margin: 10px 0;
@@ -129,13 +137,18 @@ cursor: pointer;
 transition: background-color 0.3s;
 }
 
-.search-bar {
+.search {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    margin-bottom: 20px;
 }
 
 .search-bar input[type="text"] {
-    width: 100%;
+    flex: 1;
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
@@ -148,6 +161,5 @@ transition: background-color 0.3s;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    margin-left: -1px; 
 }
-
-
