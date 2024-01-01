@@ -10,4 +10,10 @@ class Complaint extends Model
     use HasFactory;
 
     protected $fillable=['user_id','description','complaint_type'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

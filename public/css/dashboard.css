@@ -166,18 +166,6 @@ nav a:hover {
     margin-top: 1px; 
 }
 
-.DateRange {
-    display: flex;
-    align-items: center;
-}
-
-.DateRange label {
-    margin-right: 10px;
-}
-.DateRange input {
-    margin-right: 10px;
-
-}
 
 
 

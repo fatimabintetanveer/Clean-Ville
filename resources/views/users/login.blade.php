@@ -6,19 +6,14 @@
     <title>Login - Clean Ville</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet"  href="{{ asset('css/styles.css') }}">
 
 </head>
 
 <body>
-    
-    <div class="body-container">
 
-    
-    <div class="icon-container">
-    <a href="/" class="home-link">
-        <i class="fas fa-home text-white"></i>
-    </a>
-    </div>
+     @include('partials.home_header');
+    <div class="body-container">
     <section class="mission">
         <h1>Our Mission</h1>
         <p>At CleanVille, we are dedicated to the cause of promoting cleanliness and sustainability. Our mission is to empower communities to come together, take action, and make a positive impact on our public spaces. We believe that a clean environment is essential for the well-being of our community members and the planet.

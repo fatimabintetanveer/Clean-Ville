@@ -13,7 +13,6 @@ class CreateTasksTable extends Migration
             $table->id();
             $table->unsignedBigInteger('event_id');
             $table->string('description');
-            // Add more task fields as needed
             $table->timestamps();
 
             $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');

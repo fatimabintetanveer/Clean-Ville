@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/signup.css') }}">
+    <link rel="stylesheet"  href="{{ asset('css/styles.css') }}">
+
     <title>Sign Up - Public Space Cleaning Scheduler</title>
     
 </head>
 
 <body>
-<div class="body-container text-white p-5">
-    <div class="logo fixed-top d-flex align-items-center justify-content-center">
-            <img  src="{{ asset('images/signup.png') }}" alt="Website Logo"> 
-            <div class="ml-3">
-                <p>Where Community Unites for a Greener Tomorrow! </p>   
-                <p>Join CleanVille, Let's Create a Cleaner World Together!</p> 
-            </div>
-                 
-    </div>
+@include('partials.home_header');
 
-
-    <div class="signup-container m-auto mt-5">
+<div class="body-container">
+            
+    <div class="signup-container ">
         <form class="signup-form" method="POST" action="/users">
             @csrf
-            <h2 class="text-white">Register</h2>
+            <h2>Register</h2>
 
             <div>
             <label for="name">Full Name:</label>

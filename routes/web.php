@@ -38,11 +38,8 @@ Route::post('/users', [UserController::class,'store']);
 //Log Out User 
 Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
-
-
-// Route for displaying user-specific dashboard
+// Displaying user-specific dashboard
 Route::get('/dashboard/{userId}', [UserController::class, 'dashboard'])->name('user.dashboard');
-
 
 // User Dashboard
 Route::get('/user', [UserController::class, 'userDashboard']);

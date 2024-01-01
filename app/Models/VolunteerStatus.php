@@ -11,7 +11,7 @@ class VolunteerStatus extends Model
 
     protected $fillable = ['user_id', 'event_id', 'status'];
 
-    // Define relationships
+   
     public function user()
     {
         return $this->belongsTo(User::class);

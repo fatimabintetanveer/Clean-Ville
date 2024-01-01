@@ -1,87 +1,41 @@
-
 .body-container {
-
-    background-image: url('/images/signupbg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    background-image: url("/images/bg1.png");
+    padding-left: 50px;
 }
-body::-webkit-scrollbar {
-    width: 0px;
-}
 
-body::-webkit-scrollbar-thumb {
-    background-color: transparent;
-} 
 .signup-container {
     background-image: linear-gradient(to right, rgba(136, 234, 135, 0.354), rgb(133, 226, 161));
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    width: 70%;
-    padding: 20px;
-    padding-right: 40px;   
-    margin-top: 40vh !important;
+    width: 480px; 
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+
 }
 
-.icon-container{
-
-        display: flex;
-        height: max-content;
-        
-    }
-    .home-link {
-      
-       
-        text-decoration: none;
-        color: #000000;
-        font-size: 50px;
-        padding: 10px 20px 10px 0;
-        
-        
-    }
-    
-    
-    .contact-link {
-       
-        text-decoration: none;
-        color: #1ff617;
-        font-size: 50px;
-        padding: 10px 0 10px 20px;
-        background-color: transparent;
-        
-    }
-
-    label{
-        color: white;
-        text-align: start;
-    }
-
-    .logo{
-        background-image: linear-gradient(to right, rgba(136, 234, 135, 0.354), rgb(133, 226, 161));
-    }
-
-.logo img {
-    width: 15%;
-}
-
-.logo p {
-    left: 20px;
-    font-style: italic;
-    font-size: 20px;
-    margin-top: 5px;
-    color: rgb(0, 45, 0);
-    font-weight: bold; 
+.signup-form {
+    max-width: 100%;
 }
 
 .signup-form h2 {
     font-size: 24px;
-    color: #333;
+    color: #000000;
     margin-bottom: 20px;
 }
 
 .signup-form label {
     font-size: 16px;
-    color: #555;
+    color: #000000;
 }
 
 .signup-form input {
@@ -90,20 +44,7 @@ body::-webkit-scrollbar-thumb {
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 12px;
-}
-
-.signup-form input[type="checkbox"] {
-    margin-right: 10px;
-    display: inline;
-}
-
-.signup-form label[for="terms"] {
-    font-size: 12px;
-    display: block;
-    text-align: left;
-    margin-top: 8px;
-    padding-bottom: 20px;
+    font-size: 16px;
 }
 
 .cta-button {
@@ -118,24 +59,11 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    
 }
-
-
 
 .cta-button:active {
     background-color: #3e8e41;
 }
-
-    .extra-links {
-        margin-top: 20px;
-    }
-
-    .extra-links a {
-        text-decoration: none;
-        color: #007BFF;
-        font-weight: bold;
-    }
 
 .extra-links {
     margin-top: 20px;
@@ -145,43 +73,4 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
-}
-
-.select-container {
-    position: relative;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-select {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    appearance: none; /* Remove default arrow on some browsers */
-}
-
-.select-container::after {
-    content: '\25BC'; /* Unicode character for down arrow */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #555;
-    pointer-events: none;
-}
-
-/* Hover and focus styles */
-select:hover,
-select:focus {
-    border-color: #007BFF;
-}
-
-.error {
-    color: #ff0000; /* Red color for error messages */
-    font-size: 12px; /* Adjust the font size of error messages */
-    margin-top: 1px; /* Adjust the margin on top of error messages */
 }

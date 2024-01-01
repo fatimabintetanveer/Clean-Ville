@@ -11,7 +11,6 @@ class Task extends Model
     protected $fillable = [
         'event_id',
         'description',
-        // Add more fields as needed
     ];
 
     public function event()

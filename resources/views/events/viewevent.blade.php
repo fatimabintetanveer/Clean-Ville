@@ -20,13 +20,18 @@
     @endif
 
     <div class="search-bar form my-3 w-50 text-center m-auto">
-        <form class="row" action="{{ route('events.search') }}" method="GET">
-            <input class="form-control" type="text" name="search" placeholder="Search by title...">
-            <button class="m-auto my-2 col-4" type="submit">Search</button>
-        </form>
-    </div>
+    <form class="row align-items-center" action="{{ route('events.search') }}" method="GET">
+        <div class="col-auto mb-2">
+            <label for="search" class="col-form-label font-weight-bold">Search:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" type="text" id="search" name="search" placeholder="Search by title...">
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
 </div>
-
     <x-flash_message />
     <div class="event-display">
     @foreach($events as $event)
@@ -91,9 +96,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
 
     <x-footer />
 

@@ -9,37 +9,9 @@
     align-items: center;
     height: 100vh;
     padding-right: 50px;
-    background-image: url("/images/bg3.png");
+    background-image: url("/images/bg1.png");
     padding-left: 50px;
 
-}
-
-
-.icon-container{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    
-}
-.home-link {
-  
-   
-    text-decoration: none;
-    color: #000000;
-    font-size: 30px;
-    padding: 10px 20px 10px 0;
-    
-}
-
-
-.contact-link {
-   
-    text-decoration: none;
-    color: #000000;
-    font-size: 30px;
-    padding: 10px 0 10px 20px;
-    
 }
 
 .login-container {
@@ -50,8 +22,10 @@
     width:700px;
     padding: 30px;
     left: 20px;   
-    float: left; /* Add this line */
-    max-height: 450px ;
+    float: left;
+    max-height: 450px ;  
+    margin-top: 22px;
+    position: relative;
 }
 
 .login-form h2 {
@@ -108,7 +82,6 @@ background-color: #3e8e41;
 .section {
 text-align: center;
 float: left;
-
 background-color: #fff;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 padding-left: 30px;
@@ -130,7 +103,7 @@ margin-bottom: 30px;
 }
 
 .error {
-    color: #ff0000; /* Red color for error messages */
-    font-size: 12px; /* Adjust the font size of error messages */
-    margin-top: 1px; /* Adjust the margin on top of error messages */
+    color: #ff0000;
+    font-size: 12px; 
+    margin-top: 1px; 
 }
